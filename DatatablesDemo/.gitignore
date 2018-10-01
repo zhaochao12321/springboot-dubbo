@@ -1,9 +1,7 @@
 # Compiled class file
 *.class
-*.xml
-*.class
 *.lst
-
+.idea/
 # Log file
 *.log
 bin/
