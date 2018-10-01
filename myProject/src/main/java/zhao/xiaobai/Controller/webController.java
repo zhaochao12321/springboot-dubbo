@@ -10,6 +10,8 @@ import zhao.xiaobai.Service.UserService;
 import zhao.xiaobai.common.ResponseTemplate;
 import zhao.xiaobai.common.ResultStat;
 
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,6 +39,14 @@ public class webController {
         modelAndView.addAllObjects(data);
         return modelAndView;
     }
+
+    @GetMapping("/xiaobai/port")
+    public String grtport(HttpServletRequest request) {
+        request.getRemoteHost();
+        return  request.getRemoteAddr()+request.getRemoteHost();
+    }
+
+
 
 
 }
