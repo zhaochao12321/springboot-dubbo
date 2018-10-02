@@ -3,7 +3,7 @@
 *.xml
 *.class
 *.lst
-
+!pom.xml
 # Log file
 *.log
 bin/
